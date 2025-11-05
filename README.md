@@ -2,24 +2,26 @@
 
 Modern, PWA uyumlu bağımlılık takip uygulaması. Firebase backend ile çalışır.
 
+## 🎥 Demo
+
+[![Demo Video](https://img.shields.io/badge/Demo-Video-red?style=for-the-badge&logo=youtube)](https://drive.google.com/file/d/1HnzCBKecuTi3-WT2dFxipmZ0FbDmjgYQ/view)
+
 ## ✨ Özellikler
 
-- Kullanıcı kaydı ve girişi (Firebase Authentication)
-- Çoklu bağımlılık takibi (Sigara, Alkol, Sosyal Medya, Şeker)
-- Gün sayacı ve ilerleme gösterimi
-- Kişiselleştirilmiş motivasyon ipuçları
-- Offline çalışma desteği (PWA)
-- Mobil responsive tasarım
-- Cross-platform (Web, Android, iOS)
+- 🔐 Kullanıcı kaydı ve girişi
+- 📊 Çoklu bağımlılık takibi (Sigara, Alkol, Sosyal Medya, Şeker)
+- ⏱️ Gün sayacı ve ilerleme gösterimi
+- 💡 Kişiselleştirilmiş motivasyon ipuçları
+- 📱 PWA desteği (Offline çalışma)
+- 🎨 Responsive tasarım
 
-## 🚀 Hızlı Başlangıç
+## 🚀 Kurulum
 
-### 1. Firebase Projesi Oluşturun
+### 1. Firebase Projesi
 
 1. [Firebase Console](https://console.firebase.google.com)'da yeni proje oluşturun
 2. **Authentication** > Email/Password'ü aktif edin
-3. **Firestore Database** oluşturun (production mode)
-4. Firestore Security Rules'u ayarlayın:
+3. **Firestore Database** oluşturun ve Security Rules ekleyin:
 
 ```javascript
 rules_version = '2';
@@ -32,9 +34,9 @@ service cloud.firestore {
 }
 ```
 
-### 2. Firebase Config Ayarları
+### 2. Config Dosyası
 
-`config.js` dosyasını oluşturun ve Firebase bilgilerinizi ekleyin:
+`config.js` oluşturun ve Firebase bilgilerinizi ekleyin:
 
 ```javascript
 const firebaseConfig = {
@@ -49,65 +51,30 @@ const firebaseConfig = {
 
 **⚠️ ÖNEMLİ:** `config.js` dosyasını `.gitignore`'a ekleyin!
 
-### 3. İcon Dosyaları
+### 3. Icon'ları Oluşturun
 
-Aşağıdaki icon'ları oluşturun:
-- `icon-192.png` (192x192 px)
-- `icon-512.png` (512x512 px)
+`icon-192.png` (192x192px) ve `icon-512.png` (512x512px) oluşturun.
 
-### 4. Yayınlama
+### 4. Deploy
 
-Dosyaları HTTPS destekli bir hosting'e yükleyin.
+HTTPS destekli hosting'e yükleyin.
 
 ## 📱 PWA Kurulumu
 
-**Android:** Chrome > Menü > "Add to Home screen"  
-**iOS:** Safari > Share > "Add to Home Screen"
-
-## 🗂️ Proje Yapısı
-
-```
-├── index.html          # Ana sayfa
-├── styles.css          # Stil dosyası
-├── app.js              # Uygulama mantığı
-├── config.js           # Firebase ayarları (gitignore'a ekleyin!)
-├── manifest.json       # PWA manifest
-├── sw.js               # Service Worker
-├── icon-192.png        # PWA icon
-└── icon-512.png        # PWA icon
-```
-
-## 🔒 Güvenlik
-
-- Firebase ayarlarınızı asla GitHub'a yüklemeyin
-- `config.js` dosyasını `.gitignore`'a ekleyin
-- Firestore Security Rules'u mutlaka yapılandırın
-
-## 📊 Veritabanı Yapısı
-
-```
-users/{userId}
-  ├── email: string
-  ├── addictions: array
-  │   ├── type: string
-  │   ├── reason: string
-  │   ├── goalDays: number
-  │   └── startDate: string
-  └── updatedAt: timestamp
-```
+- **Android:** Chrome > ⋮ > "Add to Home screen"
+- **iOS:** Safari > Share > "Add to Home Screen"
 
 ## 🛠️ Teknolojiler
 
 - Vanilla JavaScript
-- Firebase Authentication
-- Firebase Firestore
+- Firebase (Auth + Firestore)
 - Service Workers (PWA)
 - CSS3 Animations
 
 ## 📝 Lisans
 
-Bu proje eğitim amaçlıdır ve özgürce kullanılabilir.
+MIT License - Eğitim amaçlıdır.
 
 ---
 
-⭐ Projeyi beğendiyseniz yıldız vermeyi unutmayın!
+⭐ Beğendiyseniz yıldız vermeyi unutmayın!
