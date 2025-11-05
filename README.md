@@ -6,6 +6,8 @@ Modern, PWA uyumlu bağımlılık takip uygulaması. Firebase backend ile çalı
 
 [![Demo Video](https://img.shields.io/badge/Demo-Video-red?style=for-the-badge&logo=youtube)](https://drive.google.com/file/d/1HnzCBKecuTi3-WT2dFxipmZ0FbDmjgYQ/view)
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-00D9FF?style=for-the-badge&logo=netlify&logoColor=white)](https://addiction-ahs.netlify.app/)
+
 ## ✨ Özellikler
 
 - 🔐 Kullanıcı kaydı ve girişi
